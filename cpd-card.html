@@ -6,7 +6,10 @@
     <title>CPD Card</title>
 
     <style>
-      .search-result-cards-card {
+        *{
+            box-sizing: border-box;
+        }
+      .a2n_cpd {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -21,19 +24,19 @@
         border-bottom: 1px solid #f19023;
         transition: all 0.3 ease;
       }
-      .search-result-cards-card .course-card {
+      .a2n_cpd .course-card {
         height: 100%;
       }
-      .search-result-cards-card-content {
+      .a2n_cpd-content {
         padding: 0 25px;
       }
-      .search-result-cards-card .provider-title {
+      .a2n_cpd .provider-title {
         font-weight: 600;
         font-size: 22px;
         color: #000000;
         margin: 40px 22px;
       }
-      .search-result-cards-card .provider-description {
+      .a2n_cpd .provider-description {
         margin: 24px 22px 0;
         font-weight: 400;
         font-size: 16px;
@@ -41,18 +44,26 @@
         line-height: 21px;
         text-transform: capitalize;
       }
-      .search-result-cards-card-content .provider-logo-container {
+      .a2n_cpd .provider-card {
+        height: 384px;
+        width: 400px;
+      }
+      .a2n_cpd-content .provider-logo-container {
         display: flex;
         justify-content: center;
         margin: 40px;
       }
-      .search-result-cards-card-content .provider-logo-container img {
+      .a2n_cpd-content .provider-logo-container img {
         width: 100%;
       }
-      .search-result-cards-card img {
+      .a2n_cpd-img {
         border-radius: 3px;
       }
-      .search-result-cards-card .search-card-provider-btn {
+      .a2n_cpd-img img {
+        border-radius: 3px;
+        height: 64px;
+      }
+      .a2n_cpd .a2n-card-provider-btn {
         margin-top: 20px;
         width: 100%;
         display: flex;
@@ -61,8 +72,20 @@
         border: none;
         padding: 20px 25px;
         background: #f8f8f8;
+        font-family: 'Inter';
         font-weight: 700;
         transition: all 0.3s ease-in;
+      }
+      .a2n_cpd .a2n-card-provider-btn a {
+        font-size: 14px;
+        color: #1c0404;
+        text-decoration: none;
+      }
+      .a2n_cpd .a2n-card-provider-btn:hover {
+        background-color: #f19023;
+      }
+      .a2n_cpd .a2n-card-provider-btn:hover a {
+        color: #fff;
       }
     </style>
   </head>
